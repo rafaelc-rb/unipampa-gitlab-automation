@@ -1,6 +1,11 @@
 import logging
 import datetime
 from typing import List, Tuple, Optional
+import sys
+from pathlib import Path
+
+# Add the parent directory to the Python path
+sys.path.append(str(Path(__file__).parent.parent))
 
 import gitlab
 from consts import GITLAB_URL, PRIVATE_TOKEN, groups
